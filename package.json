@@ -1,0 +1,26 @@
+{
+  "name": "affluent_api",
+  "version": "0.0.5",
+  "description": "Foundation API for Affluent Autos",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ray760@github.com/ray760/affluent_api.git"
+  },
+  "author": "Ray Robertson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ray760/affluent_api/issues"
+  },
+  "homepage": "https://github.com/ray760/affluent_api#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.18",
+    "mongoose": "^4.4.20"
+  }
+}

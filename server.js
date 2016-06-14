@@ -81,6 +81,17 @@ carRoute.get(function(req, res){
   });
 });
 
+// Create endpoint api/cars/:car_id for DELETE
+carRoute.delete(function(req, res) {
+  // Use the Beer model to find a specific beer and remove it
+  Car.findByIdAndRemove(req.params.car_id, function(err) {
+    if (err)
+      res.send(err);
+
+    res.json({ message: 'Removed automobile from database' });
+  });
+});
+
 // Register all our routes with /api
 apiApp.use('/api', router);
 

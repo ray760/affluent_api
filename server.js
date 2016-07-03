@@ -10,7 +10,8 @@ var express = require('express'),
     userController = require('./controllers/user.controller'),
     authController = require('./controllers/auth.controller');
 
-mongoose.connect('mongodb://localhost:27017/affluentautos');
+//mongoose.connect('mongodb://localhost:27017/affluentautos');
+mongoose.connect('mongodb://admin:123456@ds011715.mlab.com:11715/affluentautos');
 
 // Instantiate Express App
 var apiApp = express();
